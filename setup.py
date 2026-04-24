@@ -14,6 +14,10 @@ setup(
     name="brouhaha",
     version='0.9.0',
     packages=find_packages(),
+    package_data={
+        'brouhaha': ['models/best.ckpt', 'models/config.yaml'],
+    },
+    include_package_data=True,
     description="Pyannote extension for SNR and C50 predictions",
     long_description=readme,
     long_description_content_type="text/markdown",
